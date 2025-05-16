@@ -1,5 +1,5 @@
 proxy_port: "8080"
-backend_urls: "http://localhost:9000,http://localhost:9001,http://localhost:9002,http://localhost:9003,http://localhost:9004,http://localhost:9005,http://localhost:9006,http://localhost:9007,http://localhost:9008,http://localhost:9009,http://localhost:9010"
+backend_urls: "http://localhost:9000,http://localhost:9001,http://localhost:9002,http://localhost:9003,http://localhost:9004"
 rate_limiter:
   default:
     capacity: 100      # Максимальное количество токенов
