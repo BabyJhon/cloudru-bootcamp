@@ -1,0 +1,16 @@
+proxy_port: "8080"
+backend_urls: "http://localhost:9000,http://localhost:9001,http://localhost:9002,http://localhost:9003,http://localhost:9004,http://localhost:9005,http://localhost:9006,http://localhost:9007,http://localhost:9008,http://localhost:9009,http://localhost:9010"
+rate_limiter:
+  default:
+    capacity: 100      # Максимальное количество токенов
+    refill_rate: 10    # Токенов в секунду
+  ip_based:
+    capacity: 10       # меньше, чем для API-ключей т.к. может быть несколько пользователей с одного IP
+    refill_rate: 0.1    
+  special_clients:     
+    - id: "premium_client"
+      capacity: 1000
+      refill_rate: 100
+    - id: "special_client"
+      capacity: 500
+      refill_rate: 50
