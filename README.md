@@ -1,5 +1,5 @@
 # Proxy server with load balancer and rate limiting
-Тестовое задание для Cloude.ru Bootcamp
+Тестовое задание для Cloud.ru Bootcamp
 
 ## Реализованный функционал
 - Round-robin балансировщик
